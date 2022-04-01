@@ -27,7 +27,8 @@ function createGrid(size) {
 
     gridPieces.forEach((piece) => {
         piece.addEventListener('mouseover', () => {
-            piece.classList.add('color');
+            //piece.classList.add('color');
+            piece.style.backgroundColor = '#' + Math.floor(Math.random()*16777215).toString(16);
         });
     });
 }
